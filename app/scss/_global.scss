@@ -1,0 +1,80 @@
+html {
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+ul,
+li {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+   font-size: inherit;
+   color: $second-color;
+   text-transform: uppercase;
+   @extend %ubuntu-bold;
+   letter-spacing: .9;
+}
+
+body {
+   min-width: 320px;
+   overflow-x: hidden;
+   position: relative;
+   color: #74757b;
+   @extend %ubuntu-regular;
+   font-size: 16px;
+   line-height: 24px;
+}
+
+.container {
+   max-width: 1220px;
+   // padding: 0 20px;
+   margin: 0 auto;
+}
+
+.main__btns,
+.opportunities__btns {
+   margin-top: 60px;
+   z-index: 1;
+}
+
+.main__btn,
+.opportunities__btn {
+   @extend %ubuntu-bold;
+   font-size: 14px;
+   line-height: 16px;
+   color: #fff;
+   text-transform: uppercase;
+   border: none;
+   border-radius: 50px;
+   -webkit-border-radius: 50px;
+   -moz-border-radius: 50px;
+   -ms-border-radius: 50px;
+   -o-border-radius: 50px;
+   background-color: $main-color;
+   width: 268px;
+   height: 46px;
+
+   outline: none;
+   cursor: pointer;
+   
+}
